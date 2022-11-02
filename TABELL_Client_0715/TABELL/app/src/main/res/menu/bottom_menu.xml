@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/action_home"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_home_24"
+        android:title="메인" />
+
+    <item
+        android:id="@+id/action_search"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_search_24"
+        android:title="검색" />
+
+    <item
+        android:id="@+id/action_qrcode"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_qr_code_scanner_24"
+        android:title="QR코드" />
+
+    <item
+        android:id="@+id/action_food"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_food_bank_24"
+        android:title="주변식당" />
+
+    <item
+        android:id="@+id/action_setting"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_settings_24"
+        android:title="개인설정" />
+</menu>

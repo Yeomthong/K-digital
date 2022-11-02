@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+
+    <LinearLayout
+        android:id="@+id/cctvLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".CCTVActivity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="62dp"
+                android:background="#6A85B6"
+                android:minHeight="?attr/actionBarSize"
+                android:theme="?attr/actionBarTheme">
+
+                <TextView
+                    android:id="@+id/toolbar_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:text="PLUGON"
+                    android:textColor="#FFFFFF"
+                    android:textSize="32sp"
+                    android:textStyle="bold" />
+            </androidx.appcompat.widget.Toolbar>
+
+            <Button
+                android:id="@+id/button_backtoMain"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:backgroundTint="@color/white"
+                android:text="←"
+                android:textColor="#778899"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteY="153dp" />
+
+            <Switch
+                android:id="@+id/switch_detect"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="모션 감지"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="침입자를 감지하여 푸시 알림을 보냅니다."
+                android:textSize="12sp" />
+
+            <WebView
+                android:layout_width="match_parent"
+                android:layout_height="362dp"
+                android:id="@+id/cctvWebView"/>
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:layout_marginBottom="30dp"
+                android:paddingTop="5dp"
+                android:text="하단의 버튼을 이용하여 상하좌우로 10°씩 화면을 움직일 수 있습니다."
+                android:textSize="14sp"
+                tools:layout_editor_absoluteX="1dp"
+                tools:layout_editor_absoluteY="126dp" />
+
+            <Button
+                android:id="@+id/buttonUP"
+                android:layout_width="135dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:backgroundTint="#B3B2B2"
+                android:text="⬆" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/buttonLEFT"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="130dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="#B3B2B2"
+                    android:text="⬅" />
+
+                <Button
+                    android:id="@+id/buttonRIGHT"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:backgroundTint="#B3B2B2"
+                    android:text="➡" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/buttonDOWN"
+                android:layout_width="135dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:backgroundTint="#B3B2B2"
+                android:text="⬇" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+</layout>

@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <LinearLayout
+        android:id="@+id/firstlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/gradient"
+        android:orientation="vertical"
+        tools:context=".MenuActivity">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="62dp"
+            android:background="#6A85B6"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+            <TextView
+                android:id="@+id/toolbar_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:fontFamily="sans-serif-smallcaps"
+                android:text="PLUGON"
+                android:textColor="#FFFFFF"
+                android:textSize="32sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/toolbar"
+                app:layout_constraintHorizontal_bias="0.498"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/toolbar" />
+        </androidx.appcompat.widget.Toolbar>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="335dp"
+            android:orientation="horizontal"
+            android:paddingTop="50dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="335dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingStart="10dp"
+                android:paddingRight="10dp">
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:background="@drawable/back"
+                    app:srcCompat="@drawable/ic_baseline_highlight_24" />
+
+                <Button
+                    android:id="@+id/button_power"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#FFFFFF"
+                    android:text="ON/OFF"
+                    android:textColor="#000000"
+                    android:textSize="24sp"
+                    app:cornerRadius="90dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="335dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingStart="10dp"
+                android:paddingRight="10dp">
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:background="@drawable/back"
+                    app:srcCompat="@drawable/ic_baseline_timer_24" />
+
+                <Button
+                    android:id="@+id/timebutton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#FFFFFF"
+                    android:text="시간 설정"
+                    android:textColor="#000000"
+                    android:textSize="24sp"
+                    app:cornerRadius="90dp" />
+
+                <Button
+                    android:id="@+id/cancelbutton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#FFFFFF"
+                    android:text="알람 취소"
+                    android:textColor="#000000"
+                    android:textSize="24sp"
+                    app:cornerRadius="90dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="335dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="335dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingStart="10dp"
+                android:paddingTop="25dp"
+                android:paddingRight="10dp">
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:background="@drawable/back"
+                    app:srcCompat="@drawable/ic_baseline_camera_outdoor_24" />
+
+                <Button
+                    android:id="@+id/button_CCTV"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#FFFFFF"
+                    android:text="CCTV"
+                    android:textColor="#000000"
+                    android:textSize="24sp"
+                    app:cornerRadius="90dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="335dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingStart="10dp"
+                android:paddingTop="25dp"
+                android:paddingRight="10dp">
+
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:background="@drawable/back"
+                    app:srcCompat="@drawable/ic_baseline_water_damage_24" />
+
+                <Button
+                    android:id="@+id/buttonCondition"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#FFFFFF"
+                    android:text="온습도"
+                    android:textColor="#000000"
+                    android:textSize="24sp"
+                    app:cornerRadius="90dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</layout>

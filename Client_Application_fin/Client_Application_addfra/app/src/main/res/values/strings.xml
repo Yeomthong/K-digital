@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Client_Application</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_detail_fragment">Detailoption</string>
+
+    <!-- sample data-->
+    <string name="product_name">빅맥</string>
+    <string name="price">5400</string>
+    <string name="option1">기본</string>
+    <string name="option2">패티 추가(+3000원)</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Bag Fragment</string>
+
+</resources>

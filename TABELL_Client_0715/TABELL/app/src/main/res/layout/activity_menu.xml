@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <LinearLayout
+        android:id="@+id/firstlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".MenuActivity">
+
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/sky"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+            <TextView
+                android:id="@+id/toolbar_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:fontFamily="sans-serif-smallcaps"
+                android:text="TABELL"
+                android:textColor="#FFFFFF"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/toolbar"
+                app:layout_constraintHorizontal_bias="0.498"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/toolbar" />
+        </androidx.appcompat.widget.Toolbar>
+
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tab_menu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:tabIndicatorColor="#5C9BFA"
+            app:tabSelectedTextColor="@color/grey"
+            app:tabTextColor="@color/black">
+
+            <com.google.android.material.tabs.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="햄버거" />
+
+            <com.google.android.material.tabs.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="사이드" />
+
+            <com.google.android.material.tabs.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="음료" />
+
+        </com.google.android.material.tabs.TabLayout>
+
+        <ScrollView
+            android:id="@+id/scrollview_menu"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/bigmac_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="230dp"
+                    android:orientation="horizontal">
+
+
+                    <ImageView
+                        android:id="@+id/bigmac_image"
+                        android:layout_width="47dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/bigmac" />
+
+                    <TextView
+                        android:id="@+id/bigmac_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:maxLines="6"
+                        android:text=" \n \n \n빅맥\n \n5,400원"
+                        android:textAlignment="center"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/bulgogi_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="230dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/bulgogiburger_image"
+                        android:layout_width="71dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/bulgogiburger" />
+
+                    <TextView
+                        android:id="@+id/bulgogiburger_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:maxLines="6"
+                        android:text=" \n \n \n불고기버거\n \n3,100원"
+                        android:textAlignment="center"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/sanghai_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="230dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/sanghaiburger_image"
+                        android:layout_width="69dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/sanghaiburger" />
+
+                    <TextView
+                        android:id="@+id/sanghaiburger_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:maxLines="6"
+                        android:text=" \n \n \n상하이버거\n \n5,600원"
+                        android:textAlignment="center"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/french_fries_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="230dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/frenchfries_image"
+                        android:layout_width="86dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/frenchfries" />
+
+                    <TextView
+                        android:id="@+id/frenchfries_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:maxLines="6"
+                        android:text=" \n \n \n후렌치후라이\n \n2,500원"
+                        android:textAlignment="center"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/cheesesticks_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="230dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/cheesesticks_image"
+                        android:layout_width="131dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/cheesesticks" />
+
+                    <TextView
+                        android:id="@+id/cheesesticks_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:maxLines="6"
+                        android:text=" \n \n \n모짜렐라 치즈스틱\n \n3,100원"
+                        android:textAlignment="center"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/snackwrap_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="230dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/snackwrap_image"
+                        android:layout_width="135dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/snackwrap" />
+
+                    <TextView
+                        android:id="@+id/snackwrap_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:maxLines="6"
+                        android:text=" \n \n \n상하이 치킨 스낵랩\n \n3,000원"
+                        android:textAlignment="center"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/cocacola_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="230dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/cocacola_image"
+                        android:layout_width="52dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/cocacola" />
+
+                    <TextView
+                        android:id="@+id/cocacola_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:maxLines="6"
+                        android:text=" \n \n \n코카콜라\n \n3,100원"
+                        android:textAlignment="center"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/sprite_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="230dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/sprite_image"
+                        android:layout_width="71dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/sprite" />
+
+                    <TextView
+                        android:id="@+id/sprite_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:maxLines="6"
+                        android:text=" \n \n \n스프라이트\n \n2,100원"
+                        android:textAlignment="center"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/fanta_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="230dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/fanta_image"
+                        android:layout_width="44dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/fanta" />
+
+                    <TextView
+                        android:id="@+id/fanta_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:maxLines="6"
+                        android:text=" \n \n \n환타\n \n2,100원"
+                        android:textAlignment="center"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/bag_button"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/round_button"
+                app:srcCompat="@drawable/bag_size"
+                tools:ignore="SpeakableTextPresentCheck" />
+        </LinearLayout>
+
+    </LinearLayout>
+</layout>
